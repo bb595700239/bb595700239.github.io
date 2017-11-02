@@ -19,7 +19,7 @@ description: "一生想做浪漫极客"
         </div>
     </a>
     <p class="post-meta">
-        Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }} <span class="PV">PV：<span data-hk-page="http://{{ post.url | prepend: site.baseurl | prepend: site.url | }}"> - </span></span>
+        Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }} <span class="PV">PV：<span data-hk-page="{{ post.url | prepend: site.url }}"> - </span></span>
     </p>
 </div>
 <hr>
