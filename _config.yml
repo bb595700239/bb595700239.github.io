@@ -5,7 +5,7 @@ header-img: img/home-bg.jpg
 email: 595700239@qq.com
 description: "关于前端与设计，前端工程 | 周标，Web & Mobile Lover，Front-End Engineer，UI Designer | 这里是 @joubn周标 的个人博客，与你一起发现更大的世界。"
 keyword: "周标, joubn周标, joubn, @周标, 周标的博客, 博客, 个人网站, 互联网, 前端, 设计, 产品"
-url: "www.joubn.com"             # your host, for absolute URL
+url: "http://joubn.com"             # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
 
