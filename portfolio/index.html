@@ -1,0 +1,122 @@
+---
+title: Portfolio
+layout: default
+---
+
+<!DOCTYPE html>
+<html class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Joubn - Timeline</title>
+		<link rel="stylesheet" type="text/css" href="css/timeline.css" />
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+	<body>
+		<div class="container" style="margin:0;padding:0;width:100%;">
+			<header>
+				<img width="175" height="175" style="border-radius:50%;" src="http://ot9o50y1d.bkt.clouddn.com/avatar-joubn.jpg">
+				<h1>Joubn</h1>
+				<p>08届软件开发专业毕业生,<br>
+					专注于前端交互及用户体验</p>
+			</header>
+			<div class="main">
+				<ul class="cbp_tmtimeline">
+					<li>
+						<div class="cbp_tmlabel">
+							<h2 id="boxoffice">环朋厨房</h2>
+							<time>2017.04</time>
+							<img src="images/work-huanpeng.jpg">
+							<ul>
+								<li>
+									环朋厨房是一款功能完善的手机端商城（配送系统、商品发布、商品规格编辑、物流系统），针对酒店及商场等单元进行商品批发配送等服务。
+									全面覆盖H5、iOS和android三端。
+								</li>
+								<li class="skill">
+									<span class="cbp_tmicon-phone"></span>
+									<span><b>JS</b></span>
+									<span class="i-vue"></span>
+									<span class="link"><a target="_blank" href="https://www.hpaxcf.com">Try it</a></span>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="cbp_tmlabel">
+							<h2 id="boxoffice">全域骑游(共享单车)</h2>
+							<time>2016.11</time>
+							<img src="images/work-quanyu.jpg">
+							<ul>
+								<li>
+									紧跟物连网浪潮，全域共享单车，唯一的区别就是全域是专门针对全国各大景区内的单车共享。
+									所以车辆都以山地自行车为主。
+								</li>
+								<li class="skill">
+									<span class="cbp_tmicon-phone"></span>
+									<span><b>JS</b></span>
+									<span class="i-vue"></span>
+									<span class="i-jquery"></span>
+									<span class="link"><a target="_blank" href="https://test-wechat.letulife.com/journey_detail.html?platform=h5/#/main">Try it</a></span>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<div class="cbp_tmlabel">
+							<h2 id="busyweek">中政投理财平台</h2>
+							<time>2016.05</time>
+							<img src="images/work-zhongzhengtou.jpg">
+							<ul>
+								<li>
+									一款专门针对地方项目的融资理财平台，已有24个渠道（子平台）。兼容IE7及以上
+								</li>
+								<li class="skill">
+									<span class="cbp_tmicon-phone"></span>
+									<span><b>JS</b></span>
+									<span class="i-jquery"></span>
+									<span class="link"><a target="_blank" href="https://www.zhongzhengtou.com/">Try it</a></span>
+								</li>
+							</ul>
+						</div>
+					</li>
+
+					{% if site.duoshuo_username %}
+					<li>
+						<div class="cbp_tmlabel">
+			                <!-- 多说评论框 start -->
+			                <div class="comment">
+			                    <div class="ds-thread"
+									data-thread-key="{{site.duoshuo_username}}/portfolio"
+			                        data-title="{{page.title}}"
+			                        data-url="{{site.url}}{{site.baseurl}}{{page.url}}" >
+			                    </div>
+			                </div>
+			                <!-- 多说评论框 end -->
+						</div>
+					</li>
+					{% endif %}
+				</ul>
+			</div>
+		</div>
+		{% if site.duoshuo_username %}
+		<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+		<script type="text/javascript">
+		    // dynamic User by Hux
+		    var _user = '{{site.duoshuo_username}}';
+
+		    // duoshuo comment query.
+		    var duoshuoQuery = {short_name: _user };
+		    (function() {
+		        var ds = document.createElement('script');
+		        ds.type = 'text/javascript';ds.async = true;
+		        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		        ds.charset = 'UTF-8';
+		        (document.getElementsByTagName('head')[0]
+		         || document.getElementsByTagName('body')[0]).appendChild(ds);
+		    })();
+		</script>
+		<!-- 多说公共JS代码 end -->
+		{% endif %}
+	</body>
+</html>

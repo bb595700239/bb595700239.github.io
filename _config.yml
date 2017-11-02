@@ -1,0 +1,95 @@
+# Site settings
+title: Joubn Blog
+SEOTitle: 周标的博客 | Joubn Blog
+header-img: img/home-bg.jpg
+email: 595700239@qq.com
+description: "关于前端与设计，前端工程 | 周标，Web & Mobile Lover，Front-End Engineer，UI Designer | 这里是 @joubn周标 的个人博客，与你一起发现更大的世界。"
+keyword: "周标, joubn周标, joubn, @周标, 周标的博客, 博客, 个人网站, 互联网, 前端, 设计, 产品"
+url: "www.joubn.com"             # your host, for absolute URL
+baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
+
+
+
+# SNS settings
+RSS: false
+weibo_username:     bb595700239
+#zhihu_username:     bb595700239
+github_username:    bb595700239
+#twitter_username:   bb595700239
+#facebook_username:  bb595700239
+# linkedin_username:  firstname-lastname-idxxxx
+
+
+
+# Build settings
+# from 2017, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
+highlighter: rouge
+permalink: pretty
+paginate: 10
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md"]
+anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
+
+
+
+# Gems
+# from PR#40, to support local preview for Jekyll 3.0
+gems: [jekyll-paginate]
+
+
+
+# Markdown settings
+# replace redcarpet to kramdown,
+# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
+# document: http://jekyllrb.com/docs/configuration/#kramdown
+markdown: kramdown
+kramdown:
+  input: GFM                            # use Github Flavored Markdown !important
+
+
+
+# Disqus settings
+disqus_username: joubn
+
+# Netease setttings
+netease_comment: false
+
+changyan_comment: true
+
+# Analytics settings
+# Baidu Analytics 
+# ba_track_id: [your track id]
+
+# Google Analytics
+ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
+ga_domain:
+
+
+
+# Sidebar settings
+sidebar: true                           # whether or not using Sidebar.
+sidebar-about-description: "写写代码，打打游戏，<br>离开世界之前，一切都是过程"
+sidebar-avatar: http://ot9o50y1d.bkt.clouddn.com/avatar-joubn.jpg     # use absolute URL, seeing it's used in both `/` and `/about/`
+
+
+
+# Featured Tags
+featured-tags: true                     # whether or not using Feature-Tags
+featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
+
+
+
+# Progressive Web Apps
+chrome-tab-theme-color: "#000000"
+service-worker: true
+
+
+
+# Friends
+friends: [
+    {
+         title: "海洋",
+         href: "http://hineshen.github.io/"
+     },{
+
+    }
+]

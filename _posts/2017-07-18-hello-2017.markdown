@@ -1,0 +1,81 @@
+---
+layout:     post
+title:      "Hello 2017"
+subtitle:   " \"Hello World, Hello Blog\""
+date:       2017-07-18 16:22:00
+author:     "Joubn"
+header-img: "img/hello2017.jpg"
+header-mask: 0.3
+catalog: true
+tags:
+    - 生活
+---
+
+> “A little bit of progress every day. ”
+
+
+## 前言
+
+Joubn 的 Blog 就这么开通了。
+
+[跳过废话，直接看技术实现 ](#build) 
+
+
+
+2017年，总算有个地方可以写点东西了。
+
+
+“拥有一个自己的个人博客”  这个想法在我的脑海里存在很久了。
+
+之前因为种种原因放弃了（不会搭数据库，没有像样的免费空间）。偶然看到阮大神的 Blog [搭建一个免费的，无限流量的Blog----github Pages和Jekyll入门](http://www.ruanyifeng.com/blog/2012/08/blogging_with_jekyll.html),才下定决心要整起来了。
+
+作为一个高级前端开发， Blog 放到大众博客程序上就太没意思了。这也是我一直没有在各大大众博客上写东西的原因。 哥也是个有‘枪掉’的程序员好不啦！
+
+
+
+
+<p id = "build"></p>
+---
+
+## 正文
+
+接下来说说搭建这个博客的技术细节。  
+
+正好之前就有关注过 [GitHub Pages](https://pages.github.com/) + [Jekyll](http://jekyllrb.com/) 快速 Building Blog 的技术方案，非常轻松时尚。
+
+其优点非常明显：
+
+* **Markdown** 带来的优雅写作体验
+* 非常熟悉的 Git workflow ，**Git Commit 即 Blog Post**
+* 利用 GitHub Pages 的域名和免费无限空间，不用自己折腾主机
+* 如果需要自定义域名，也只需要简单改改 DNS 加个 CNAME 就好了
+* Jekyll 的自定制非常容易，基本就是个模版引擎
+
+
+这里拿的[黄玄](https://huangxuan.me/)大神的主题。这里先感谢各路大神！
+
+踩在巨人的肩膀上就是爽 @_@  （前提是你要踩的稳当）
+
+
+---
+
+配置的过程中也没遇到什么坑，基本就是 Git 的流程，相当顺手
+
+当我把主题包推到自己的Blog仓库之后 发现很多图片没有加载到或加载很慢（本来github响应就慢的）  于是我把图片都放到第三方七牛云上存储 瞬间速度提升。
+
+当然我熟练的写出漂亮的博文还需要对Jekyll语法、及markdown语法有个深入的了解才行....（学习中）
+
+
+## 后记
+
+回顾这个博客的诞生，纯粹是出于个人兴趣。后期我会不断维护更新。多出干粮少说废话（好像很难--！）。
+
+中间会有个人的一些作品上传，当然是要经过公司同意的代码贡献出来！
+
+OK,  不忘初心 砥砺前行
+
+如果你恰好逛到了这里，希望你能喜欢我。
+
+—— joubn 后记于 2017.07.18
+
+
