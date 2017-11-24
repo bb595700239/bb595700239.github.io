@@ -69,9 +69,9 @@ $("#Pagination").pagination(100, {
 .pagination span.page-num{font-size: 14px;padding: 0 10px;border-radius: 10px;border: 1px solid #cccfd2;margin: 0 3px;cursor: pointer;background: #fff;}
 .pagination span.page-num.on{ background: #ffb80d\9; background-image: linear-gradient( 90deg, #ffb80d, #ff960d);color: #fff;border: none;height: 32px;line-height: 32px;}
 .pagination span.next, .pagination span.prev{border: 1px solid #cccfd2;color: #666666;padding: 0 20px;margin: 0 10px;border-radius: 5px;}
-.pagination span.total-info{font-size: 14px;margin-left: 12px;margin-right: 12px;}
+.pagination span.total-info{font-size: 14px;margin-left: 6px;margin-right: 6px;}
 .pagination .jump-index{border: 1px solid #bfbfbf;height: 30px;line-height: 30px;border-radius: 5px;margin: 0 10px;width: 40px;}
-.pagination .jump-page{border: 1px solid #cccfd2;background: #fff;border-radius: 10px;color: #666666;height: 30px;line-height: 30px;width: 64px;cursor: pointer;margin-left: 26px;}
+.pagination .jump-page{border: 1px solid #cccfd2;background: #fff;border-radius: 10px;color: #666666;height: 30px;line-height: 30px;width: 48px;cursor: pointer;margin-left: 5px;}
 .pagination-small span{height: 32px;line-height: 32px;}
 .pagination-small span.page-num{padding: 0 9px;}
 .pagination-small .jump-index{height: 32px;line-height: 32px;}
