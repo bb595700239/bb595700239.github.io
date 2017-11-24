@@ -113,7 +113,7 @@ jQuery.fn.pagination = function(maxentries, opts){
 			if (opts.first_text
 					&& (current_page > 0 || opts.first_show_always)) {
 				
-				appendItem(0,{text:opts.first_text, classes:"first"});  //第一页
+				//appendItem(0,{text:opts.first_text, classes:"first"});  //第一页
 			}
 			// Generate "Previous"-Link
 			if(opts.prev_text && (current_page > 0 || opts.prev_show_always)){
@@ -154,7 +154,7 @@ jQuery.fn.pagination = function(maxentries, opts){
 			// Generate "Last"-Link
 			if (opts.last_text
 					&& (current_page < np - 1 || opts.last_show_always)) {
-				appendItem(np,{text:opts.last_text, classes:"last"});//最后一页
+				//appendItem(np,{text:opts.last_text, classes:"last"});//最后一页
 			}
 
 			if(opts.isJump){

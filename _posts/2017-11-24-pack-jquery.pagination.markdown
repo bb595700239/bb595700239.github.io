@@ -62,7 +62,7 @@ $("#Pagination").pagination(100, {
 <div id="Pagination-con"></div>
 <div id="Pagination" class="pagination"></div>
 <style>
-.pagination{text-align: center;padding: 15px;height: 32px;overflow: hidden;vertical-align: top;position: relative;z-index:100;}
+.pagination{text-align: center;height: 32px;overflow: hidden;vertical-align: top;position: relative;z-index:100;}
 .pagination .con{height: 32px;margin: 0 auto;display: inline-block;*zoom: 1;*display: inline;padding: 0;}
 .pagination span.page-num.prev, .pagination span.page-num.next{padding: 0 14px;margin: 0 10px;border-radius: 10px;font-size: 14px;}
 .pagination span{font-size: 14px;float: left;display: inline-block;*zoom: 1;*display: inline;height: 30px;line-height: 30px;}
