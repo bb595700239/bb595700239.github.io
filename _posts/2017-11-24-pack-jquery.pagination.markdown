@@ -25,6 +25,7 @@ tags:
 - 对原js文件注释进行了中文翻译，默认文字也是汉化了的
 
 ## 参数
+
 参数名 | 描述 | 参数值 
 --- | :------: | :-----: 
 maxentries | 总条目数 | 必选参数，整数 
@@ -59,7 +60,7 @@ $("#Pagination").pagination(100, {
 
 ## demo及下载
 <div id="Pagination-con"></div>
-<div id="Pagination"></div>
+<div id="Pagination" class="pagination"></div>
 <style>
 .pagination{text-align: center;padding: 15px;height: 32px;overflow: hidden;vertical-align: top;position: relative;z-index:100;}
 .pagination .con{height: 32px;margin: 0 auto;display: inline-block;*zoom: 1;*display: inline;padding: 0;}
