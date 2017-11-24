@@ -64,24 +64,24 @@ $("#Pagination").pagination(100, {
 <style>
 .pagination{text-align: center;height: 32px;overflow: hidden;vertical-align: top;position: relative;z-index:100;}
 .pagination .con{height: 32px;margin: 0 auto;display: inline-block;*zoom: 1;*display: inline;padding: 0;}
-.pagination span.page-num.prev, .pagination span.page-num.next{padding: 0 14px;margin: 0 10px;border-radius: 10px;font-size: 14px;}
+.pagination span.page-num.prev, .pagination span.page-num.next{padding: 0 10px;margin: 0 5px;border-radius: 10px;font-size: 14px;}
 .pagination span{font-size: 14px;float: left;display: inline-block;*zoom: 1;*display: inline;height: 30px;line-height: 30px;}
 .pagination span.page-num{font-size: 14px;padding: 0 10px;border-radius: 10px;border: 1px solid #cccfd2;margin: 0 3px;cursor: pointer;background: #fff;}
 .pagination span.page-num.on{ background: #ffb80d\9; background-image: linear-gradient( 90deg, #ffb80d, #ff960d);color: #fff;border: none;height: 32px;line-height: 32px;}
 .pagination span.next, .pagination span.prev{border: 1px solid #cccfd2;color: #666666;padding: 0 20px;margin: 0 10px;border-radius: 5px;}
 .pagination span.total-info{font-size: 14px;margin-left: 12px;margin-right: 12px;}
-.pagination #jump-index{border: 1px solid #bfbfbf;height: 30px;line-height: 30px;border-radius: 5px;margin: 0 10px;width: 40px;}
+.pagination .jump-index{border: 1px solid #bfbfbf;height: 30px;line-height: 30px;border-radius: 5px;margin: 0 10px;width: 40px;}
 .pagination .jump-page{border: 1px solid #cccfd2;background: #fff;border-radius: 10px;color: #666666;height: 30px;line-height: 30px;width: 64px;cursor: pointer;margin-left: 26px;}
 .pagination-small span{height: 32px;line-height: 32px;}
 .pagination-small span.page-num{padding: 0 9px;}
-.pagination-small #jump-index{height: 32px;line-height: 32px;}
+.pagination-small .jump-index{height: 32px;line-height: 32px;}
 .pagination-small .jump-page{height: 32px;line-height: 32px;}
 </style>
 
 <script src="{{ '/js/plugin/jquery.pagination.js' | prepend: site.baseurl }}"></script>
 
 <script>
-    $("#Pagination").pagination(100, {
+    $("#Pagination").pagination(8, {
         num_edge_entries: 2,
         num_display_entries: 4,
         callback: function(i){
