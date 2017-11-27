@@ -2,7 +2,7 @@
 layout:     post
 title:      "时间格式化微码"
 subtitle:   "微码归纳笔记"
-date:       2017-11-27
+date:       2017-11-26
 author:     "Joubn"
 header-img: "img/hello2017.jpg"
 header-mask: 0.3
@@ -82,7 +82,7 @@ Date.prototype.add = function (part, value) {
 ## 使用方法
 ```js
 
-new Date().add("m", -1).format('yyyy-MM-dd hh:mm:ss')
+new Date().add("m", -1).format('yyyy-MM-dd hh:mm:ss w')
 
 ```
 
@@ -146,7 +146,7 @@ Date.prototype.add = function (part, value) {
   return this
 }
 
-document.querySelector('#time').innerHTML = new Date().add("m", -1).format('yyyy-MM-dd hh:mm:ss')
+document.querySelector('#time').innerHTML = new Date().add("m", -1).format('yyyy-MM-dd hh:mm:ss w')
 </script>
 
 
