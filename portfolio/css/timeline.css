@@ -25,6 +25,9 @@ body, html {
 	margin-bottom: 423px;
 	padding: 0 1.375em;
 }
+.main{
+	margin-bottom: 0;
+}
 
 @font-face {
 	font-family: 'huxico';
