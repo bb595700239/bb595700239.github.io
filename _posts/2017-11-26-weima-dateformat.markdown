@@ -145,8 +145,10 @@ Date.prototype.add = function (part, value) {
   }
   return this
 }
+var timer = setInterval(function(){
+    document.querySelector('#time').innerHTML = new Date().add("m", -1).format('yyyy-MM-dd hh:mm:ss w')
+},1000)
 
-document.querySelector('#time').innerHTML = new Date().add("m", -1).format('yyyy-MM-dd hh:mm:ss w')
 </script>
 
 
