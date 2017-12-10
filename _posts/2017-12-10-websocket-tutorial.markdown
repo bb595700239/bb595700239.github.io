@@ -1,8 +1,8 @@
 ---
 layout:     post
 title:      "webSocket+nodejs搭建聊天室"
-subtitle:   "微码归纳笔记"
-date:       2017-11-27
+subtitle:   "nodejs实践"
+date:       2017-12-10
 author:     "Joubn"
 header-img: "img/hello2017.jpg"
 header-mask: 0.3
@@ -19,7 +19,7 @@ tags:
 
 闲来无事用nodejs及websocket搭建一个简易聊天室玩玩，后面有时间丰富ui
 
-##  demo
+##  简易聊天室
 
 这里`templetWidth`就是你拿到的效果图宽度
 
@@ -31,7 +31,7 @@ tags:
 
 <div id="info"></div>
 <script>
-    var websocket = new WebSocket('ws://47.104.13.121/')
+    var websocket = new WebSocket('ws://api.joubn.com/')
     //var websocket = new WebSocket('ws://localhost:8010/')
     function showMessage(str,type){
         var div = document.createElement('div');
