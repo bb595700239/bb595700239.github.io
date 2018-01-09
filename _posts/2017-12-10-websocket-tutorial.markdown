@@ -21,8 +21,6 @@ tags:
 
 ##  简易聊天室
 
-这里`templetWidth`就是你拿到的效果图宽度
-
 
 <form action="javascript:return false">
     <input id="sendtxt" type="text"/>
@@ -30,7 +28,16 @@ tags:
 </form>
 
 <div id="info"></div>
+<div id="app">
+  {{ message }}
+</div>
 <script>
+var app = new Vue({
+  el: '#app',
+  data: {
+    message: 'Hello Vue!'
+  }
+})
     var websocket = new WebSocket('ws://api.joubn.com/')
     //var websocket = new WebSocket('ws://localhost:8010/')
     function showMessage(str,type){
