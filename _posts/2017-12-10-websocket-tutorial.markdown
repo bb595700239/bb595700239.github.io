@@ -29,15 +29,15 @@ tags:
 
 <div id="info"></div>
 <div id="app">
-  {{ message }}
 </div>
 <script>
-var app = new Vue({
-  el: '#app',
-  data: {
-    message: 'Hello Vue!'
-  }
-})
+    var app = new Vue({
+      el: '#app',
+      template: '<div>{{ message }}</div>'
+      data: {
+        message: 'Hello Vue!'
+      }
+    })
     var websocket = new WebSocket('ws://api.joubn.com/')
     //var websocket = new WebSocket('ws://localhost:8010/')
     function showMessage(str,type){
