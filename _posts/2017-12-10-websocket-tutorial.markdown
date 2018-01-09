@@ -33,7 +33,9 @@ tags:
 <script>
     var app = new Vue({
       el: '#app',
-      template: '<div>{{ message }}</div>',
+      render (h) {
+        return h('div', this.message)
+      },
       data: {
         message: 'Hello Vue!'
       }
