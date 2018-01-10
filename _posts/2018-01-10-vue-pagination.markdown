@@ -30,7 +30,7 @@ filters:{
 
 ## 完整代码
 
-```js
+```html
 <template>
     <el-table :data="tableData | pagination(pageNo,pageSize)">
       <el-table-column label="ID">
