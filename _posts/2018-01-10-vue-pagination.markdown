@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "VUE结合elementUI(Pagination)进行前端分页"
-subtitle:   "生活"
+subtitle:   "微码"
 date:       2018-01-10
 author:     "Joubn"
 header-img: "img/hello2017.jpg"
