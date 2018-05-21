@@ -37,7 +37,7 @@ tags:
 
 
 当然你也可以改变背景的距离 改成多个单位
-<input style="width: 200px;display: inline-block;margin-left: 20px;vertical-align: middle;" type="range" max="10" value="0" style="margin:0 auto;" onchange="demo(this)" />
+<input style="width: 200px;display: inline-block;margin-left: 20px;vertical-align: middle;" type="range" max="10" value="0" onchange="demo(this)" />
 <script type="text/javascript">
 	function demo(obj){
 		var val = Number(obj.value)+1
@@ -70,11 +70,11 @@ tags:
 <div class="scrollbox2" onscroll="demo2(this)">
     <style type="text/css">
         .scrollbox2{padding: 0; height: 500px;    overflow: auto; overflow-x: hidden;}
-    	.scrollbox2 .box{width: 100%;height: 1280px;position: relative;background-image: url('http://joubn.com/img/home-bg.jpg');}
+    	.scrollbox2 .box{width: 100%;height: 1280px;position: relative;background-image: url('/img/home-bg.jpg');}
     	.scrollbox2 img.body{    position: absolute; left: 50%; top: 50%;    transform: translate(-50%,-50%); }
     </style>
     <div class="box">
-        <img src="http://static.joubn.com/avatar-joubn.jpg" class="body" alt="">
+        <img src="/img/meinv.jpg" class="body" alt="">
     </div>
 </div>
 
@@ -91,7 +91,7 @@ tags:
 ```html
 <div class="scrollbox2" onscroll="demo2(this)">
     <div class="box">
-        <img src="http://static.joubn.com/avatar-joubn.jpg" class="body" alt="">
+        <img src="/img/meinv.jpg" class="body" alt="">
     </div>
 </div>
 
@@ -106,6 +106,44 @@ tags:
 
 js实现起来就容易理解了也不用什么视图啦，看在远看的近了。因为这个3D视角最终给人的感觉就是元素滚动有的快有的慢嘛。
 所以我们根据滚动的距离来调整一个背景和美女的移动速度就OK啦！
+
+### 扩展
+
+前面说到其实这种效果可以应用到各多场景和各种事件。
+这里我再展示一个之前写的根据鼠标移动的视差效果：
+
+<div class="scrollbox3" onmousemove="demo3(this,event)">
+    <style type="text/css">
+        .scrollbox3{padding: 0; height: 500px; position: relative;}
+        	.scrollbox3 .bubble1{transform: translate(30%,5%) scale(.5);}
+        	.scrollbox3 .bubble2{transform: translate(-80%,-80%) scale(.6);}
+        	.bubble{width:200px;height:200px;box-shadow:inset -30px -30px 75px rgba(255,30,85,.2),inset 0 0 5px rgba(255,30,85,.5),inset 0 0 55px rgba(255,255,255,.5),inset -3px -3px 5px rgba(0,0,0,.5),0 0 50px rgba(255,255,255,.75);border-radius:100px;background:rgba(255,255,255,.4);position:absolute;left: 50%; top: 50%;    transform: translate(-50%,-50%);}
+        	.bubble:before{content:"";display:block;position:absolute;width:50px;height:50px;top:25px;left:25px;border-radius:75px 25px;box-shadow:inset 10px 10px 50px rgba(255,255,255,.6)}
+        	.bubble:after{content:"";display:block;position:absolute;width:190px;height:190px;border-radius:190px;left:5px;top:5px;box-shadow:inset 0 -5px 5px rgba(255,30,85,.05)}
+    </style>
+    <div class="bubble bubble1" style="z-index:3;"></div>
+    <div class="bubble bubble2" style="z-index:5;"></div>
+    <div class="bubble bubble3" style="z-index:9;"></div>
+</div>
+
+<script type="text/javascript">
+	function demo3(obj,ev){
+        var l = obj.offsetWidth/2
+        var t = obj.offsetHeight/2
+        var bubble = document.querySelectorAll('.scrollbox3 .bubble')
+
+        var iL = ev.clientX;
+        var iT = ev.clientY;
+        for(var i=0; i<bubble.length; i++){
+            bubble[i].style.marginLeft=(iL - l )/100*bubble[i].style.zIndex+'px';
+            bubble[i].style.marginTop=(iT - t )/70*bubble[i].style.zIndex+'px';
+        }
+    }
+</script>
+
+这里代码就不展示了 自己找吧。因为其实JS的实现还是比较简单的。根据鼠标的移动距离来调整每个泡泡的移动速度。每个泡泡的移动速度又是根据它自身样式`z-index`的值去获取就OK了 
+
+好了到这里结束吧。
 
 
 
