@@ -28,7 +28,7 @@ tags:
 >
 >好友分享 from=singlemessage&isappinstalled=0
 
-这样就对那些用`hash`形式跳转的单页面应用有影响了（其它形式跳转请跳过），本来`http://localhost/#/index?id=1769`这样的地址被改成
+本来`http://localhost/#/index?id=1769`这样的地址被改成
 `http://localhost/?from=singlemessage&isappinstalled=0#/index?id=1769`这样了。虽然这样好像也能访问，但是会有一个致命的问题那就是会导致页面签名失败从而导致第二次分享就会出问题（访问地址和后台的签名地址不一致了）。
  
  所以就要用下面的代码重载页面：
