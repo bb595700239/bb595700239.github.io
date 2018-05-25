@@ -49,7 +49,7 @@ if(window.location.href.indexOf('from=')!=-1 && window.location.href.indexOf('is
 就只能用下面的代码：
 
 ```js
-if('这是分享的页面'){
+if('这是分享出去的页面'){
 	window.goto = () => {
       //do something
     }
