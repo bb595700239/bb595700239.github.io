@@ -101,6 +101,12 @@ layout: default
                 <div id="SOHUCS" sid="{{ page.date }}" ></div>
                 <!-- 畅言 评论框 end -->
                 {% endif %}
+
+                {% if site.gitalk_comment %}
+                <!-- gitalk 评论框 start -->
+                <div id="gitalk-container"></div>
+                <!-- gitalk 评论框 end -->
+                {% endif %}
             </div>  
 
     <!-- Side Catalog Container -->
