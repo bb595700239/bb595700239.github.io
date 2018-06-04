@@ -53,7 +53,11 @@ disqus_username: joubn
 # Netease setttings
 netease_comment: false
 
-changyan_comment: true
+# 畅言评论
+changyan_comment: false
+
+# gitalk评论
+gitalk_comment: true
 
 # Analytics settings
 # Baidu Analytics 

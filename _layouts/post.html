@@ -187,6 +187,25 @@ layout: default
 <!--畅言评论 PC和WAP自适应版 end-->
 {% endif %}
 
+{% if site.gitalk_comment %}
+<!--gitalk评论 PC和WAP自适应版 start-->
+<link rel="stylesheet" href="//unpkg.com/gitalk/dist/gitalk.css">
+<script src="//unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script type="text/javascript">
+	var gitalk = new Gitalk({
+		clientID: 'dcf26bb5a5b7573d46aa',
+		clientSecret: '8cc55207396110d0b74574bb35d5f2e8bfcb99e6',
+		repo: 'bb595700239.github.io',
+		owner: 'bb595700239',
+		admin: ['bb59570023'],
+		id: location.pathname,
+		distractionFreeMode: true
+	})
+	gitalk.render('gitalk-container')
+</script>
+<!--gitalk评论 PC和WAP自适应版 end-->
+{% endif %}
+
 {% if site.disqus_username %}
 <!-- disqus 公共JS代码 start (一个网页只需插入一次) -->
 <script type="text/javascript">
