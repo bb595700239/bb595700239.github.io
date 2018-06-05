@@ -8,7 +8,7 @@ header-img: "img/contact-bg.jpg"
 header-mask: 0.3
 catalog: true
 tags:
-    -js
+    - js
 ---
 
 > “He who seize the right moment, is the right man. ”

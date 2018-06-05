@@ -8,7 +8,7 @@ header-img: "img/contact-bg.jpg"
 header-mask: 0.3
 catalog: true
 tags:
-    -微码
+    - 微码
 ---
 
 > “Nothing for nothing. ”
