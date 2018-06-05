@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Echarts加载geoJson数据,实现省市联动"
+title:      "Echarts加载geoJson数据,实现省市地图下钻"
 subtitle:   "微信分享"
 date:       2018-06-05
 author:     "Joubn"
