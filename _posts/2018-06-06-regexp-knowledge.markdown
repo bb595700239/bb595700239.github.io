@@ -37,11 +37,11 @@ var regex = new RegExp('xyz'); var regex = new RegExp('xyz','i')
 ### 正则对象方法
 
 ```asp
-test(): 返回布尔值。当前模式是否匹配表达式<br/>
-new RegExp(r).test(str)<br/>
+test(): 返回布尔值。当前模式是否匹配表达式
+new RegExp(r).test(str)
 
-exec(): 返回匹配结果。两个属性（index,input）<br/>
-new RegExp(r).exec(str)<br/>
+exec(): 返回匹配结果。两个属性（index,input）
+new RegExp(r).exec(str)
 ```
 
 ### 与正则相关的字符串方法
