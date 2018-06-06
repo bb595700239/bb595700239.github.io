@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Echarts加载geoJson数据,实现省市地图下钻"
-subtitle:   "微信分享"
+subtitle:   "geoJson"
 date:       2018-06-05
 author:     "Joubn"
 header-img: "img/contact-bg.jpg"
