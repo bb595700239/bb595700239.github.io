@@ -131,7 +131,7 @@ String.prototype.split(reg) //按规则进行字符串分割，返回分割的�
 
 ### 提取网页超链接
 
-```html
+```asp
 (<a\\s*(?!.*\\brel=)[^>]*)(href="https?:\\/\\/)((?!(?:(?:www\\.)?'.implode('|(?:www\\.)?', $follow_list).'))[^"]+)"((?!.*\\brel=)[^>]*)(?:[^>]*)>
 ```
 
