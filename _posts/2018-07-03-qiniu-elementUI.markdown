@@ -368,14 +368,17 @@ upload.vue
 1.利用`AccessKey`、`SecretKey`、`bucketName`(存储空间名) 通过一系列加密算法得到token.
 
 2.把得到的token和文件一并提交到七牛（这里的提交地址是七牛提供的，每个地区的空间都不一样 ,这里的token提交的时候属性名就叫token）地址如下：
+
+
+3.获取提交返回的地址（可以再提交给后端用）
+
     ```html
+        空间提交地址：
         * 华东空间使用 upload.qiniup.com 
         * 华北空间使用 upload-z1.qiniu.com
         * 华南空间使用 upload-z2.qiniu.com
         * 北美空间使用 upload-na0.qiniu.com
     ```
-
-3.获取提交返回的地址（可以再提交给后端用）
 
 
 
