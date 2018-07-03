@@ -24,7 +24,7 @@ ps:当然这是有风险的，因为你的`ak/sk`全部暴露了。
 
 ## DEMO
 
-<iframe frameborder="0" width="100%" height="420px" src="http://static.joubn.com/2018-07-03-qiniu-elementUI/index.html"></iframe>
+<iframe frameborder="0" width="100%" height="264px" src="http://static.joubn.com/2018-07-03-qiniu-elementUI/index.html"></iframe>
 
 你可以点添加图片试试（最多只能添加两张），然后点地址复制到浏览器地址栏就可以看到图片了，此时说明图片已经上传到服务器了！
 
@@ -367,7 +367,8 @@ upload.vue
 
 1.利用`AccessKey`、`SecretKey`、`bucketName`(存储空间名) 通过一系列加密算法得到token.
 
-2.把得到的token和文件一并提交到七牛（这里的提交地址是七牛提供的，每个地区的空间都不一样  <span style="color:red">* 华东空间使用 upload.qiniup.com * 华北空间使用 upload-z1.qiniu.com  * 华南空间使用 upload-z2.qiniu.com  * 北美空间使用 upload-na0.qiniu.com</span>,这里的token提交的时候属性名就叫token）
+2.把得到的token和文件一并提交到七牛（这里的提交地址是七牛提供的，每个地区的空间都不一样 ,这里的token提交的时候属性名就叫token）地址如下：
+    <div style="color:red;margin-left:40px">* 华东空间使用 upload.qiniup.com <br/>* 华北空间使用 upload-z1.qiniu.com  <br/>* 华南空间使用 upload-z2.qiniu.com  <br/>* 北美空间使用 upload-na0.qiniu.com</div>
 
 3.获取提交返回的地址（可以再提交给后端用）
 
