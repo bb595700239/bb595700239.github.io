@@ -367,18 +367,23 @@ upload.vue
 
 1.利用`AccessKey`、`SecretKey`、`bucketName`(存储空间名) 通过一系列加密算法得到token.
 
-2.把得到的token和文件一并提交到七牛（这里的提交地址是七牛提供的，每个地区的空间都不一样 ,这里的token提交的时候属性名就叫token）地址如下：
+2.把得到的token和文件一并提交到七牛（这里的[提交地址](https://developer.qiniu.com/kodo/manual/1671/region-endpoint)是七牛提供的，每个地区的空间都不一样 ,这里的token提交的时候参数名就叫token）
 
 
 3.获取提交返回的地址（可以再提交给后端用）
 
-    ```html
-        空间提交地址：
-        * 华东空间使用 upload.qiniup.com 
-        * 华北空间使用 upload-z1.qiniu.com
-        * 华南空间使用 upload-z2.qiniu.com
-        * 北美空间使用 upload-na0.qiniu.com
-    ```
+
+    
+### 结束语
+
+关于elementUI上传组件的使用这里就不介绍了可以看这里[elementUI-upload](http://element.eleme.io/#/zh-CN/component/upload).
+
+
+-------划重点-------
+
+这里只是简单的把图片上传到空间，当然我们也可以修改图片的名称，就是上传的时候带一个参数`key`.[上传参数说明](https://developer.qiniu.com/kodo/manual/1272/form-upload)
+
+也可以配合加上图片压缩再上传（正好可以放到下篇文章去一起写😁） 这样就相对完善一点了！
 
 
 
