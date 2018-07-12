@@ -59,6 +59,9 @@ changyan_comment: false
 # gitalk评论
 gitalk_comment: true
 
+# 百度统计
+baidu_tongji: true
+
 # Analytics settings
 # Baidu Analytics 
 # ba_track_id: [your track id]
