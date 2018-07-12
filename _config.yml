@@ -59,12 +59,10 @@ changyan_comment: false
 # gitalk评论
 gitalk_comment: true
 
-# 百度统计
-baidu_tongji: true
 
 # Analytics settings
 # Baidu Analytics 
-# ba_track_id: [your track id]
+ba_track_id: [f4837bb45d516bb2a37c220a1342a731]
 
 # Google Analytics
 ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
