@@ -20,7 +20,7 @@ tags:
 
 ## 图片压缩实现
 
-先看demo[image-compress-qinniu](http://static.joubn.com/2018-07-27-image-compress-qiniu/index.html)
+先看demo [image-compress-qinniu](http://static.joubn.com/2018-07-27-image-compress-qiniu/index.html)
 
 可以配置图片信息然后上传图片到七牛云一气呵成。是的 看似简单的过程背后是一连串的代码逻辑。
 
@@ -135,7 +135,7 @@ const compressImgSource = (img,maxW,maxH,quality) => {
 
 	return new Promise((resolve, reject) => {
 
-		resBase64 = canvas.toDataURL("image/jpeg",quality); // 截取canvas对应的jpg图片，并且画质为70%（默认就是70%，可以改变）
+		resBase64 = canvas.toDataURL("image/jpeg",quality);
 		imgInfo.base64.res = resBase64
 		imgInfo.base64.width = canvas.width
 		imgInfo.base64.height = canvas.height
