@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "vue图片压缩预览并上传至七牛云"
+title:      "图片压缩预览并上传至七牛云"
 subtitle:   "图片压缩"
 date:       2018-07-27
 author:     "Joubn"
@@ -16,7 +16,7 @@ tags:
 ## 为什么要前端图片压缩
 
 1. 节省流量
-2. 提高上传时间，增加用户体验
+2. 减少上传时间，增加用户体验
 
 ## 图片压缩实现
 
@@ -28,7 +28,7 @@ tags:
 
 ### canvas的drawImage()方法
 
-这是图片*压缩宽高*的关键方法
+这是图片*宽高压缩*的关键方法
 
 ```js
 context.drawImage(img, dx, dy);
@@ -64,7 +64,7 @@ mozilla上的配图：
 
 ### canvas的toDataURL()方法和toBlob()方法
 
-这两个方法主要是将canvas转换成base64和blob(二进制)图片类型。并进行图片质量压缩。
+这两个方法主要是将canvas转换成base64和blob(二进制)图片类型。并进行图片*质量压缩*。
 #### canvas.toDataURL() 
 
 ```js
