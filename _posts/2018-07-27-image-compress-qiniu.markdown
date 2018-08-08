@@ -60,7 +60,7 @@ context.drawImage(img, sx, sy, sWidth, sHeight, dx, dy, dWidth, dHeight);
 </dl>
 
 mozilla上的配图：
-![](http://pbafbo2ye.bkt.clouddn.com/Frp1lrVSll6c2dN7LcrCJlBzq_Kb)
+![](http://static-demo.joubn.com/Frp1lrVSll6c2dN7LcrCJlBzq_Kb)
 
 ### canvas的toDataURL()方法和toBlob()方法
 

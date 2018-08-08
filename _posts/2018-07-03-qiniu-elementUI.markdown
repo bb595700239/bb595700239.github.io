@@ -65,7 +65,7 @@ let SK = 'u7GnAvumfWyMo6yXw-mSXLztEn0PPSE4PmBwDRwG';
 
 //空间绑定域名
 
-let domain = 'http://pbafbo2ye.bkt.clouddn.com/'
+let domain = 'http://static-demo.joubn.com/'
 
 
 
