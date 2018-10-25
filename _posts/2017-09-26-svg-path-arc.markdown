@@ -245,3 +245,33 @@ window.onload = draw('M 3 125 A 122,122 0 0 1 247,125');
   }
 }
 </style>
+
+## 后续
+
+最近突然发现好像有更简单的方法去实现这个功能：
+
+利用`circle `的`stroke-dashoffset`属性来偏移描边
+
+用到的属性：
+- `stroke-dasharray`  控制用来描边的点划线的图案范式(周长)
+- `stroke-dashoffset` 指定了dash模式到路径开始的距离
+- `stroke-linecap` 指定描边两端的形
+
+<div style="text-align:center;margin-bottom:20px;">
+<svg style="width:250px; margin:0 auto;" viewBox="0,0,250,250"><circle cx="125" cy="125" r="122" stroke="#d9d9d9" fill="none" stroke-width="3"></circle><circle id="circle2" cx="125" cy="125" r="122" stroke="red" fill="none" stroke-width="3" stroke-linecap="round"></circle><text x="103" y="130" fill="#ccc" font-size="30" font-family="arial">svg</text></svg>
+</div>
+
+<div style="text-align:center;margin-bottom:20px;">
+    <input type="range" style="margin:0 auto;" onchange="demo2(this)" value="0" />
+</div>
+<script type="text/javascript">
+var circle2 = document.querySelector('#circle2')
+var r = circle2.getAttribute('r')
+var dasharray = 2*Math.PI*r
+circle2.setAttribute('stroke-dasharray',dasharray)
+circle2.setAttribute('stroke-dashoffset',dasharray)
+function demo2(obj){
+    var val=(1-(obj.value/100))*dasharray
+    document.querySelector('#circle2').setAttribute('stroke-dashoffset',val)
+}
+</script>
