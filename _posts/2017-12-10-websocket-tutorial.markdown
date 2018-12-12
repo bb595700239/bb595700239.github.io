@@ -40,7 +40,7 @@ tags:
         message: 'Hello Vue!'
       }
     })
-    var websocket = new WebSocket('ws://api.joubn.com/')
+    var websocket = new WebSocket('ws://212.64.24.247:80/')
     //var websocket = new WebSocket('ws://localhost:8010/')
     function showMessage(str,type){
         var div = document.createElement('div');
